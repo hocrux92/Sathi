@@ -17,14 +17,21 @@ const userSchema = new Schema({
     },
     image: {
         type: String,
-        default: '/image/userlogo.jpg'
+        default: '/image/logo4.png'
     },
     email: {
+        type: String
+    },
+    password:{
         type: String
     },
     date: {
         type: String,
         default: Date.now
+    },
+    online:{
+        type: Boolean,
+        default: false
     }
 });
 
